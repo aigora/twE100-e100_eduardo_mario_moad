@@ -3,7 +3,9 @@ Catálogo concesionario de automóviles
 
 ## Integrantes del equipo
 
-1. Moad Hilaly Cherif (moadhilaly) 2. Mario García de Marina (mgarciademarina) 3. Eduardo Gómez Godino (eduardogomezg)
+-Moad Hilaly Cherif (moadhilaly) 
+-Mario García de Marina (mgarciademarina) 
+-Eduardo Gómez Godino (eduardogomezg)
 
 ## Objetivos del trabajo
 
