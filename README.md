@@ -9,4 +9,9 @@ Catálogo/Base de datos de un concesionario de automóviles
 
 ### Objetivos del trabajo
 
-Facilitar la organización del inventario de un concesionario. Se pretende simular una base de datos en la que se puedan clasificar los distintos vehículos según distintas características (motor, plazas, precio, etc.)
+Facilitar la organización del inventario de un concesionario: 
+Se pretende simular una base de datos, en la que se puedan clasificar los distintos vehículos según diferentes características:
+  * Tipo de motor 
+  * Plazas  
+  * Precio  
+  * etc.
