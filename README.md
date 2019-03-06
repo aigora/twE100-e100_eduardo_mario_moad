@@ -1,5 +1,5 @@
 # Título del trabajo
-Catálogo concesionario de automóviles
+Catálogo/Base de datos de un concesionario de automóviles
 
 ### Integrantes del equipo
 
