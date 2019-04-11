@@ -1,5 +1,5 @@
 # Título del trabajo
-Catálogo/Base de datos de un concesionario de automóviles
+Configurador de vehículos de un concesionario de automóviles.
 
 ### Integrantes del equipo
 
@@ -9,9 +9,10 @@ Catálogo/Base de datos de un concesionario de automóviles
 
 ### Objetivos del trabajo
 
-Facilitar la organización del inventario de un concesionario: 
-Se pretende simular una base de datos, en la que se puedan clasificar los distintos vehículos según diferentes características:
-  * Tipo de motor 
-  * Plazas  
-  * Precio  
+Facilitar la configuración de un vehículo a la hora de ralizar la compra o solicitar un presupuesto: 
+Se pretende configurar un determinado vehículo, permitiendo la elección de determinados elementos a gusto del cliente y generando una factura de los mismos.
+Las opciones que se incluyen el el configurador son:
+  * Tipo de carrocería 
+  * Tipo de motor   
+  * Gama de acabados   
   * etc.
