@@ -62,17 +62,17 @@ int main(){
         case 1: printf( "\n   Ha seleccionado Veh?ulo Utilitario Deportivo (S.U.V)\n");
             Configuracionuno (dato, opcion);      				
             break;
-        case 2: printf( "\n   Ha seleccionado Sed?");
+        case 2: printf( "\n   Ha seleccionado Sed?\n");
 		    Configuraciondos(dato, opcion);       
             break;
-        case 3: printf( "\n   Ha seleccionado Coup?/Deportivo");
+        case 3: printf( "\n   Ha seleccionado Coup?/Deportivo\n");
             Configuraciondos (dato, opcion); 	            
             break;
-        case 4: printf( "\n   Ha Selecionado Monovolumen"); 
+        case 4: printf( "\n   Ha Selecionado Monovolumen\n"); 
             Configuracionuno (dato, opcion); 
 			break; 
     } 
-	printf("Ha finalizado la configuraci?, presione cualquier tecla para salir.\n");
+	printf("\nHa finalizado la configuraci?, presione cualquier tecla para salir.\n");
 	printf("La factura se ha generado en el escritorio con el nombre del cliente y su primer apellido.\n");
 	return 0;
 }
@@ -178,9 +178,9 @@ Sdatos DatosyFecha (void){
 	                fflush(stdin);
 	            }                                        
            		switch ( opcioncolor1 ){
-               		case 1: printf( "\n   Ha seleccionado color blanco\n ");             		
+               		case 1: printf( "\n   Ha seleccionado color blanco\n");             		
             		    	break;
-                	case 2: printf( "\n   Ha seleccionado color rojo\n ");
+                	case 2: printf( "\n   Ha seleccionado color rojo\n");
          		        	break; 
 		    	}
             	break;
@@ -200,11 +200,11 @@ Sdatos DatosyFecha (void){
 	                fflush(stdin);
 	           	}                                        
             	switch ( opcioncolor1){
-                	case 1: printf( "\n   Ha seleccionado color blanco\n ");
+                	case 1: printf( "\n   Ha seleccionado color blanco\n");
                         	break;
-                	case 2: printf( "\n   Ha seleccionado color rojo\n ");
+                	case 2: printf( "\n   Ha seleccionado color rojo\n");
                        	 	break; 
-                	case 3: printf( "\n   Ha seleccionado color Azul\n ");
+                	case 3: printf( "\n   Ha seleccionado color Azul\n");
                         	break;                                         
 				}                                        
            		break;
@@ -226,15 +226,15 @@ Sdatos DatosyFecha (void){
 	            	fflush(stdin);
 	        	}                                        
            		switch ( opcioncolor1){
-                	case 1: printf( "\n   Ha seleccionado color blanco\n ");
+                	case 1: printf( "\n   Ha seleccionado color blanco\n");
                        	 	break;
-               		case 2: printf( "\n   Ha seleccionado color rojo\n ");
+               		case 2: printf( "\n   Ha seleccionado color rojo\n");
                         	break; 
-                	case 3: printf( "\n   Ha seleccionado color Azul\n ");
+                	case 3: printf( "\n   Ha seleccionado color Azul\n");
                         	break;  
-		        	case 4: printf( "\n   Ha seleccionado color Gris\n ");
+		        	case 4: printf( "\n   Ha seleccionado color Gris\n");
                         	break; 
-                	case 5: printf( "\n   Ha seleccionado color Negro\n ");
+                	case 5: printf( "\n   Ha seleccionado color Negro\n");
                         	break;										                                      
 				}                               
 		    	break; 
@@ -321,9 +321,9 @@ int Configuraciondos (Sdatos dato, int opcion){
 	                fflush(stdin);
 	            }                                        
                 switch ( opcioncolor2 ){
-                    case 1: printf( "\n   Ha seleccionado color blanco\n ");
+                    case 1: printf( "\n   Ha seleccionado color blanco\n");
                             break;
-                    case 2: printf( "\n   Ha seleccionado color rojo\n ");
+                    case 2: printf( "\n   Ha seleccionado color rojo\n");
                             break; 
 				}
                 break;
@@ -343,11 +343,11 @@ int Configuraciondos (Sdatos dato, int opcion){
 	                fflush(stdin);
 	            }                                        
                 switch ( opcioncolor2){
-                    case 1: printf( "\n   Ha seleccionado color blanco\n ");
+                    case 1: printf( "\n   Ha seleccionado color blanco\n");
                             break;
-                    case 2: printf( "\n   Ha seleccionado color rojo\n ");
+                    case 2: printf( "\n   Ha seleccionado color rojo\n");
                             break; 
-                    case 3: printf( "\n   Ha seleccionado color Azul\n ");
+                    case 3: printf( "\n   Ha seleccionado color Azul\n");
                             break;                                         
 				}                                        
                 break;
@@ -369,15 +369,15 @@ int Configuraciondos (Sdatos dato, int opcion){
 	                fflush(stdin);
 	            }                                        
                 switch ( opcioncolor2){
-                    case 1: printf( "\n   Ha seleccionado color blanco\n ");
+                    case 1: printf( "\n   Ha seleccionado color blanco\n");
                             break;
-                    case 2: printf( "\n   Ha seleccionado color rojo\n ");
+                    case 2: printf( "\n   Ha seleccionado color rojo\n");
                             break; 
-                    case 3: printf( "\n   Ha seleccionado color Azul\n ");
+                    case 3: printf( "\n   Ha seleccionado color Azul\n");
                             break;  
-		            case 4: printf( "\n   Ha seleccionado color Gris\n ");
+		            case 4: printf( "\n   Ha seleccionado color Gris\n");
                             break; 
-                    case 5: printf( "\n   Ha seleccionado color Negro\n ");
+                    case 5: printf( "\n   Ha seleccionado color Negro\n");
                             break;										                                      
 				}                                  
 			    break; 
@@ -454,8 +454,7 @@ void factura1(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int 
     total = preciomotor + preciocaja + preciogama + preciocolor;
     // Se printea el total
     fprintf (p_archivo, "Precio Total: %d?\n", total);
-    // Cierre del archivo
-    p_archivo = fclose(nombrearchivo);
+    // Fin de la funci?
 }
 // Funci? para el segundo tipo de factura
 void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int opcioncolor, int opcion){
@@ -531,6 +530,5 @@ void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int 
     total = preciomotor + preciocaja + preciogama + preciocolor;
     // Se printea el precio total
     fprintf (p_archivo, "Precio Total: %d?\n", total);
-    // Cierre del archivo
-    p_archivo = fclose(nombrearchivo);
+    // Fin de la funci?
 }
