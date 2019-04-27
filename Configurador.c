@@ -25,6 +25,7 @@ int Configuracionuno (Sdatos dato, int opcion);
 int Configuraciondos (Sdatos dato, int opcion);
 void factura1(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int opcioncolor, int opcion);
 void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int opcioncolor, int opcion);
+void InformacionBasica (void);
 // Funcion Main
 int main(){
 	// Configuración para el uso de caracteres en castellano
@@ -32,6 +33,7 @@ int main(){
 	
 	// Variables
 	int  opcion;
+	InformacionBasica();
 	Sdatos dato;
 	
 	// Inicio programa
@@ -531,4 +533,9 @@ void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int 
     // Se printea el precio total
     fprintf (p_archivo, "Precio Total: %d€\n", total);
     // Fin de la función
+}
+//Función que genera el cuadro de información básica sobre el programa
+void InformacionBasica(void){
+	printf("\n Realizado por Mario García de Marina, Eduardo Gómez Godino, Moad Hilaly Cherif ");
+	printf("\n El siguiente programa facilita la configuración de un vehículo a la hora de realizar la compra o solicitar un presupuesto. Se pretende configurar un determinado vehículo, permitiendo la elección de determinados elementos a gusto del cliente y generando una factura de los mismos ");
 }
