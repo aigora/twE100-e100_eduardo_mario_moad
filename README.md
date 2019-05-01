@@ -9,7 +9,7 @@ Configurador de vehículos de un concesionario de automóviles.
 
 ### Objetivos del trabajo
 
-Facilitar la configuración de un vehículo a la hora de ralizar la compra o solicitar un presupuesto. 
+Facilitar la configuración de un vehículo a la hora de realizar la compra o solicitar un presupuesto. 
 Se pretende configurar un determinado vehículo, permitiendo la elección de determinados elementos a gusto del cliente y generando una factura de los mismos.
 Las opciones que se incluyen en el configurador son:
   * Tipo de carrocería 
