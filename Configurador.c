@@ -74,8 +74,9 @@ int main(){
             Configuracionuno (dato, opcion); 
 			break; 
     } 
-	printf("\nHa finalizado la configuración, presione cualquier tecla para salir.\n");
+	printf("\n\nHa finalizado la configuración, presione cualquier tecla para salir.\n");
 	printf("La factura se ha generado en el escritorio con el nombre del cliente y su primer apellido.\n");
+	
 	return 0;
 }
 
@@ -391,7 +392,7 @@ int Configuraciondos (Sdatos dato, int opcion){
 // Función para generar tipo de factura 1
 void factura1(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int opcioncolor, int opcion){
 	// Variables de la función
-	int preciomotor, preciocaja, preciogama, preciocolor, total;
+	int preciomotor, preciocaja, preciogama, preciocolor, total, c;
 	char fact[10] = "Factura_", txt[5]= ".txt", nombrearchivo[N];
 	char flecha[8] = " ---->";
     // Asignación de precio para motor
@@ -455,13 +456,24 @@ void factura1(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int 
     // Cálculo del precio total
     total = preciomotor + preciocaja + preciogama + preciocolor;
     // Se printea el total
-    fprintf (p_archivo, "Precio Total: %d€\n", total);
+    fprintf (p_archivo, "Precio Total: %d€", total);
     // Fin de la función
+    // Muestra de la factura en pantalla
+    printf ("Factura:\n");
+	puts ("\n\n");
+	rewind (p_archivo);
+	c = 1;
+	while (c != EOF)
+	{
+		c = fgetc (p_archivo);
+		printf ("%c", c);
+	}
+	fclose (p_archivo);    
 }
 // Función para el segundo tipo de factura
 void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int opcioncolor, int opcion){
 	// Variables de la función
-	int preciomotor, preciocaja, preciogama, preciocolor, total;
+	int preciomotor, preciocaja, preciogama, preciocolor, total, c;
 	char fact[10] = "Factura_", txt[5]= ".txt", nombrearchivo[N];
 	char flecha[8] = " ---->";
     // Asignación de precio para motor
@@ -531,11 +543,23 @@ void factura2(Sdatos dato, int opcionmotor, int opcioncaja, int opciongama, int 
     // Cálculo del precio total
     total = preciomotor + preciocaja + preciogama + preciocolor;
     // Se printea el precio total
-    fprintf (p_archivo, "Precio Total: %d€\n", total);
+    fprintf (p_archivo, "Precio Total: %d€", total);
     // Fin de la función
+    // Muestra de la factura en pantalla
+    printf ("Factura:\n");    
+	puts ("\n\n");
+	rewind (p_archivo);
+	c = 1;
+	while (c != EOF)
+	{
+		c = fgetc (p_archivo);
+		printf ("%c", c);
+	}
+	fclose (p_archivo);        
 }
-//Función que genera el cuadro de información básica sobre el programa
+//Funcion que genera el cuadro de informacion basica sobre el programa
 void InformacionBasica(void){
-	printf("\n Realizado por Mario García de Marina, Eduardo Gómez Godino, Moad Hilaly Cherif ");
-	printf("\n El siguiente programa facilita la configuración de un vehículo a la hora de realizar la compra o solicitar un presupuesto. Se pretende configurar un determinado vehículo, permitiendo la elección de determinados elementos a gusto del cliente y generando una factura de los mismos ");
+	printf("\n Realizado por Mario Garcia de Marina, Eduardo Gomez Godino, Moad Hilaly Cherif ");
+	printf("\n El siguiente programa facilita la configuracion de un vehiulo a la hora de realizar la compra o solicitar un presupuesto. Se pretende configurar un determinado vehiculo, permitiendo la eleccion de determinados elementos a gusto del cliente y generando una factura de los mismos\n ");
 }
+
